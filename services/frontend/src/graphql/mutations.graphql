@@ -1,0 +1,7 @@
+# mutations.graphql
+mutation AddMessage($channelId: String!, $text: String!) {
+  addMessage(channelId: $channelId, text: $text) {
+    id
+    text
+  }
+}

@@ -1,0 +1,14 @@
+# queries.graphql
+query GetChannels {
+  channels {
+    id
+    name
+  }
+}
+
+query GetMessages($channelId: String!) {
+  messages(channelId: $channelId) {
+    id
+    text
+  }
+}
